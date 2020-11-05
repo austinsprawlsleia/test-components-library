@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "main": "dist/main.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/austinsprawlsleia/test-components-library.git"
-  },
+  "repository": "git+https://github.com/austinsprawlsleia/test-components-library.git",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/austinsprawlsleia/test-components-library/issues"
@@ -28,5 +25,6 @@
   "scripts": {
     "build": "webpack",
     "prepare": "npm run build"
-  }
+  },
+  "author": "Austin Sprawls <austin.sprawls@leiainc.com>"
 }
