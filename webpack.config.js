@@ -2,9 +2,11 @@ const path = require('path')
 
 module.exports = {
   // mode: 'development',
-  entry: './src/entry.js',
+  entry: './src/index.js',
   output: {
     filename: 'main.js',
+    library: 'componentLib',
+    libraryTarget: 'umd',
     path: path.resolve(__dirname, 'dist')
   },
   externals: {
