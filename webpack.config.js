@@ -22,17 +22,17 @@ module.exports = {
       commonjs: 'prop-types',
       commonjs2: 'prop-types'
     },
-    '@material-ui/core': {
+    // '@material-ui/core': {
+    //   commonjs: '@material-ui/core',
+    //   commonjs2: '@material-ui/core'
+    // },
+    '@material-ui/core/styles': {
       commonjs: '@material-ui/core',
       commonjs2: '@material-ui/core'
     },
-    '@material-ui/core/styles': {
-      commonjs: '@material-ui/core/styles',
-      commonjs2: '@material-ui/core/styles'
-    },
     '@material-ui/core/TextField': {
-      commonjs: '@material-ui/core/TextField',
-      commonjs2: '@material-ui/core/TextField' 
+      commonjs: '@material-ui/core',
+      commonjs2: '@material-ui/core' 
     }
   },
   // externals: {
