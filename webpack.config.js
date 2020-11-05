@@ -11,7 +11,10 @@ module.exports = {
   },
   externals: {
     react: 'commonjs2 react',
-    'react/jsx-runtime': 'commonjs react'
+    'react/jsx-runtime': 'commonjs react',
+    'prop-types': 'commonjs2 PropTypes',
+    '@material-ui/core/styles': 'commonjs makeStyles',
+    '@material-ui/core/TextField': 'commonjs2 TextField'
   },
   module: {
     rules: [
