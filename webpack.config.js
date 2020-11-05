@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -8,7 +9,7 @@ module.exports = {
   },
   externals: {
     react: 'React',
-    'react/jsx-runtime': '_jsx'
+    'react/jsx-runtime': 'React'
   },
   module: {
     rules: [
