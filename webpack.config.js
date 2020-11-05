@@ -14,7 +14,7 @@ module.exports = {
     'react/jsx-runtime': 'commonjs react',
     'prop-types': 'commonjs2 prop-types'},
     function({}, callback) {
-      callback(null, ['@material-ui/core/TextField', 'TextField'], 'commonjs');
+      callback(null, ['@material-ui/core/TextField'], 'commonjs2');
     },
     function({}, callback) {
       callback(null, ['@material-ui/core/styles', 'makeStyles'], 'commonjs');
