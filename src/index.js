@@ -1,2 +1,1 @@
-import TextField from './TextField'
-export const TextField 
+export * from './TextField';
