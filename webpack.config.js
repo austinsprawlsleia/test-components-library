@@ -9,7 +9,7 @@ module.exports = {
   },
   externals: {
     react: 'commonjs2 react',
-    // 'react/jsx-runtime': 'React'
+    'react/jsx-runtime': 'commonjs react'
   },
   module: {
     rules: [

@@ -13,8 +13,7 @@
   },
   "homepage": "https://github.com/austinsprawlsleia/test-components-library#readme",
   "peerDependencies": {
-    "react": ">= 16.8.3",
-    "victory": ">= 34.0.0"
+    "react": ">= 16.8.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
