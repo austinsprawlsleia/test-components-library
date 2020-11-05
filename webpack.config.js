@@ -8,7 +8,7 @@ module.exports = {
   },
   externals: {
     react: 'React',
-    'react/jsx-runtime': '_jsx'
+    'react/jsx-runtime': 'React'
   },
   module: {
     rules: [
