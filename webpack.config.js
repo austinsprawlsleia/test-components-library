@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   externals: {
-    react: 'react',
+    react: 'commonjs2 react',
     // 'react/jsx-runtime': 'React'
   },
   module: {
