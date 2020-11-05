@@ -8,7 +8,7 @@ module.exports = {
   },
   externals: {
     react: 'React',
-    'react/jsx-runtime': 'jsx'
+    'react/jsx-runtime': '_jsx'
   },
   module: {
     rules: [
@@ -18,6 +18,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
+            plugins: ['@babel/plugin-transform-react-jsx'],
             presets: [['@babel/preset-env', { targets: { esmodules: true } }],
               ['@babel/preset-react', { runtime: 'automatic' }]]
           }
