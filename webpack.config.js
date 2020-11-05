@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  mode: 'development',
+  // mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -10,16 +10,23 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   externals: [
-    {react: 'commonjs2 react',
-    'react/jsx-runtime': 'commonjs react',
-    'prop-types': 'commonjs2 prop-types'},
-    function({}, callback) {
-      callback(null, ['@material-ui/core/TextField'], 'commonjs2');
-    },
-    function({}, callback) {
-      callback(null, ['@material-ui/core/styles', 'makeStyles'], 'commonjs');
-    },
+    'react',
+    'react/jsx-runtime',
+    'prop-types',
+    '@material-ui/core/TextField',
+    '@material-ui/core/styles'
   ],
+  // externals: [
+  //   {react: 'commonjs2 react',
+  //   'react/jsx-runtime': 'commonjs react',
+  //   'prop-types': 'commonjs2 prop-types'},
+  //   function({}, callback) {
+  //     callback(null, ['@material-ui/core/TextField'], 'commonjs2');
+  //   },
+  //   function({}, callback) {
+  //     callback(null, ['@material-ui/core/styles', 'makeStyles'], 'commonjs');
+  //   },
+  // ],
   module: {
     rules: [
       {
