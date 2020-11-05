@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  // mode: 'development',
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -21,6 +21,10 @@ module.exports = {
     'prop-types': {
       commonjs: 'prop-types',
       commonjs2: 'prop-types'
+    },
+    '@material-ui/core': {
+      commonjs: '@material-ui/core',
+      commonjs2: '@material-ui/core'
     },
     '@material-ui/core/styles': {
       commonjs: '@material-ui/core/styles',
