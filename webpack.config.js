@@ -7,8 +7,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   externals: {
-    react: 'react',
-    'react/jsx-runtime': 'react/jsx-runtime'
+    react: 'React',
+    'react/jsx-runtime': '_jsx'
   },
   module: {
     rules: [
