@@ -12,10 +12,10 @@ export default isLightTheme => makeStyles({
       fontFamily
     },
     '& .MuiInputBase-input': {
-      color: isLightTheme ? COLORS.nero : COLORS.white
+      color: `${isLightTheme ? COLORS.nero : COLORS.white} !important`
     },
     '& .MuiIconButton-root': {
-      color: isLightTheme ? COLORS.dimGray : COLORS.gainsboro,
+      color: `${isLightTheme ? COLORS.dimGray : COLORS.gainsboro} !important`,
       '&$checked': {
         color: COLORS.purpleHeart
       }
@@ -26,7 +26,7 @@ export default isLightTheme => makeStyles({
     '& label.MuiInputLabel-outlined': {
       fontFamily,
       fontSize: '16px',
-      color: isLightTheme ? COLORS.dimGray : COLORS.lightGray,
+      color: `${isLightTheme ? COLORS.dimGray : COLORS.lightGray} !important`,
       '&.Mui-focused': {
         color: COLORS.curiousBlue
       }
