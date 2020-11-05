@@ -2,6 +2,7 @@
   "name": "test-components-library",
   "version": "1.0.0",
   "private": true,
+  "main": "dist/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/austinsprawlsleia/test-components-library.git"
