@@ -9,13 +9,17 @@ module.exports = {
     libraryTarget: 'umd',
     path: path.resolve(__dirname, 'dist')
   },
-  externals: {
-    react: 'commonjs2 react',
+  externals: [
+    {react: 'commonjs2 react',
     'react/jsx-runtime': 'commonjs react',
-    'prop-types': 'commonjs2 prop-types',
-    '@material-ui/core/styles': 'commonjs @material-ui/core/styles',
-    '@material-ui/core/TextField': 'commonjs2 @material-ui/core/TextField'
-  },
+    'prop-types': 'commonjs2 prop-types'},
+    function({}, callback) {
+      callback(null, ['@material-ui/core/TextField', 'TextField'], 'commonjs');
+    },
+    function({}, callback) {
+      callback(null, ['@material-ui/core/styles', 'makeStyles'], 'commonjs');
+    },
+  ],
   module: {
     rules: [
       {
